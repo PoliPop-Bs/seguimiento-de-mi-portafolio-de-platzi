@@ -301,3 +301,23 @@ h2 {
   height: inherit;
   flex-wrap: inherit;
 }
+
+/* desktop first que empieses el MQ mas grande */
+
+@media screen and (max-width: 1024) {
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    border: 10px solid greenyellow;
+  }
+}
+
+@media screen and (max-width: 480) {
+
+}
+
+@media screen and (max-width: 320) {
+
+}
