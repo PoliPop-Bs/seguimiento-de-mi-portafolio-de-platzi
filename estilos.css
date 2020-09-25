@@ -46,6 +46,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project_subtitle,
@@ -78,6 +79,7 @@ h6 {
 .project_image_container {
   width: 500px;
   display: flex;
+
 }
 
 /* Clean CSS here */
@@ -95,9 +97,10 @@ figure {
   background-color: #0a97b0;
   color: white;
   display: flex;
-  height: 90px;
+  min-height: 110px;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .header ol {
   display: flex;
@@ -131,6 +134,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .hero_image {
@@ -165,6 +169,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer img {
   vertical-align: middle;
@@ -235,6 +240,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social {
@@ -293,13 +299,16 @@ h2 {
 
 .container {
   /* border: 1px solid red; */
-  width: 1000px;
+  max-width: 1000px;
+  /* width: 100%; */
+  flex: 1;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
+
 }
 
 /* desktop first que empieses el MQ mas grande */
@@ -308,9 +317,24 @@ h2 {
 
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    border: 10px solid greenyellow;
+@media screen and (max-width: 767px) {
+  .headrer {
+    display: block;
+    height: auto;
+  }
+  .header ol {
+    display: block;
+  }
+  .header ol li{
+    height: 50px;
+    /* text-align: center; */
+  }
+  .header a {
+    justify-content: center;
+  }
+  .header .logo {
+    text-align: center;
+    margin: auto;
   }
 }
 
