@@ -73,12 +73,16 @@ h6 {
 }
 
 .project_details {
-  width: 500px;
-  display: inline-block;
+  width: 50%;
+  /* display: inline-block; */
 }
 .project_image_container {
-  width: 500px;
-  display: flex;
+  width: 50%;
+  /* display: flex; */
+}
+
+.project_image_container img {
+  max-width: 100%;
 
 }
 
@@ -336,7 +340,43 @@ h2 {
     text-align: center;
     margin: auto;
   }
-}
+  .project {
+    display: block;
+  }
+  .project_image_container {
+    width: auto;
+    text-align: center;
+  }
+  .project_details {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .project_subtitle, .project_date, .project_link {
+  margin: .4em 0;
+  }
+
+  .project_title {
+    font-size: 1.5em;
+    margin-bottom: .4em;
+  }
+  .project_link {
+    font-size: 1em;
+
+  }
+  .project_subtitle{
+    font-size: 1.2em;
+
+  }
+  .project_date {
+    font-size: 1em;
+
+  }
+
+  .project_description {
+    font-size: .8em;
+
+  }
 
 @media screen and (max-width: 480) {
 
