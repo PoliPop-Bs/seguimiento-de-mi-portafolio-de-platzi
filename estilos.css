@@ -4,7 +4,7 @@ declaraciones
 valores */
 
 body {
-  background-color: azure;
+  background-color: #f6f6f6;
   margin: 0px;
 }
 
@@ -41,7 +41,7 @@ h6 {
   border-radius: 10px;
   /* margin: 10px; */
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 20px;
   background: white;
   display: flex;
   align-items: center;
@@ -83,6 +83,8 @@ h6 {
 
 .project_image_container img {
   max-width: 100%;
+  border: 1px solid plum;
+
 
 }
 
@@ -160,7 +162,7 @@ h1 strong {
   color: #f54291;
 }
 h2 {
-  color: #f54291;
+  color: #f76a8c;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -168,8 +170,8 @@ h2 {
   margin-bottom: 40px;
 }
 .footer {
-  color: white;
-  background-color: #0a97b0;
+  color: #393b44;
+  background-color: #f6f6f6;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -182,7 +184,7 @@ h2 {
   color: white;
 }
 .portfolio {
-  background-color: #faeee7;
+  background-color: #f6f6f6;
   padding: 20px;
 }
 
@@ -193,13 +195,13 @@ h2 {
 .event_list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .event {
-  border: 1px solid red;
-  margin: 10px;
-  width: 400px;
+  /* border: 1px solid red; */
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -238,13 +240,14 @@ h2 {
 }
 
 .contact {
-  background-color: red;
-  color: white;
-  height: 180px;
+  background-color: #f6f6f6;
+  color: #393b44;
+  min-height: 180px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 10px;
 }
 
 .social {
@@ -288,7 +291,7 @@ h2 {
 .form_email button {
   display: block;
   background: transparent;
-  color: white;
+  color: #393b44;
   /* margin-top: 10px; */
   padding: 10px 0;
   border-radius: 10px;
@@ -317,8 +320,10 @@ h2 {
 
 /* desktop first que empieses el MQ mas grande */
 
-@media screen and (max-width: 1024) {
-
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 1em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -378,10 +383,43 @@ h2 {
 
   }
 
-@media screen and (max-width: 480) {
+  .event {
+    width: auto;
+    flex-shrink: 1;
+  }
 
+  .event img {
+    width: 100%;
+  }
+
+@media screen and (max-width: 480px) {
+  .event_detail {
+    margin: -2em .5em .5em;
+    padding: 1em;
+  }
+
+  .contact {
+    height: auto;
+    /* padding: 1em 0; */
+    text-align: center;
+    display: block;
+  }
+
+  .form_email button {
+    margin: 1em auto;
+  }
+
+  .form_email h3 {
+    margin-top: 0;
+  }
+
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
 }
 
-@media screen and (max-width: 320) {
+@media screen and (max-width: 320px) {
 
 }
