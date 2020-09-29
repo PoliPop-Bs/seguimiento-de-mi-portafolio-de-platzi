@@ -84,7 +84,7 @@ h6 {
   margin: 10px 0;
 }
 .project_description {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .project strong {
@@ -102,7 +102,9 @@ h6 {
 }
 
 .project_details {
-  width: 50%;
+  width: 48%;
+  margin-right: 2px;
+  /* padding-right: 5px; */
   /* display: inline-block; */
 }
 .project_image_container {
@@ -215,7 +217,7 @@ h2 {
 }
 .portfolio {
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: 10px;
 }
 
 .project img {
@@ -266,7 +268,7 @@ h2 {
 }
 
 .event_list_title {
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .contact {
@@ -396,7 +398,11 @@ h2 {
 
 /* desktop first que empieses el MQ mas grande */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
+  .portfolio {
+    padding: 0;
+  }
+
   .container {
     padding: 0 1em;
   }
@@ -424,6 +430,7 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
+
   .burger_button {
   display: block;
   }
@@ -500,7 +507,8 @@ h2 {
   }
 
   .project_description {
-    font-size: .8em;
+    font-size: 1em;
+    /* font-size: 16px; */
 
   }
 
@@ -514,8 +522,13 @@ h2 {
   }
 
 @media screen and (max-width: 480px) {
+
   h1 {
     font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1em;
+    margin: .5em 0;
   }
   .event_detail {
     margin: -2em .5em .5em;
@@ -541,6 +554,11 @@ h2 {
     display: block;
     text-align: center;
     border: 1px solid transparent;
+  }
+  .social_link {
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
   }
 }
 
