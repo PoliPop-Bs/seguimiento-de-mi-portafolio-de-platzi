@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <i class="icon-menu"></i>
+    <i class="icon-menu burger_button" id="burger_menu"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -192,7 +192,7 @@
                 allowfullscreen
               ></iframe>
             </div>
-        
+
             <!-- <img class="event_image" src="images/wichi.png" alt="none" /> -->
           </figure>
 
@@ -267,5 +267,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const menu = document.querySelector(".menu");
+      console.log(menu);
+
+      const bubu = document.querySelector("#burger_menu");
+      console.log(burger_menu);
+
+      bubu.addEventListener("click", hideShow);
+
+      function hideShow() {
+        if (menu.classList.contains("is_active")) {
+          menu.classList.remove("is_active");
+        } else {
+          menu.classList.add("is_active");
+        }
+      }
+    </script>
   </body>
 </html>

@@ -372,6 +372,28 @@ h2 {
   position: relative;
 }
 
+.burger_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .5);
+  display: none;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  line-height: 38px;
+  text-align: center;
+
+  position: fixed;
+  z-index: 4;
+  /* left: 5px;
+  top: 5px; */
+  color: aliceblue;
+  font-size: 30px;
+  margin: 5px;
+}
+
 /* desktop first que empieses el MQ mas grande */
 
 @media screen and (max-width: 1024px) {
@@ -402,6 +424,9 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
+  .burger_button {
+  display: block;
+  }
   .headrer {
     display: block;
     height: auto;
@@ -420,6 +445,27 @@ h2 {
     text-align: center;
     margin: auto;
   }
+
+  .menu {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: -60vw;
+    width: 60vw;
+    height: 50vw;
+    border-radius: 0px 25px 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+
+  .menu.is_active {
+    left: 0;
+  }
+
   .project {
     display: block;
   }
